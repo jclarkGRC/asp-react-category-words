@@ -17,7 +17,8 @@ namespace CategoryWords.Controllers
             "cars", "animals", "names", "movies"
         };
 
-        public IEnumerable<Category> GameCategories(int Id)
+        [HttpGet("[action]")]
+        public IEnumerable<Category> Categories()
         {
             var id = 0;
             return Enumerable.Range(0, categories.Length).Select(index => new Category
