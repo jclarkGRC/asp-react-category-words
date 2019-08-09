@@ -6,7 +6,7 @@ import { actionCreators } from '../store/Home';
 class Home extends React.Component {
     componentWillMount() {
         // This method runs when the component is first added to the page
-        this.props.requestWeatherForecasts();
+        this.props.requestCategories();
     }
 
     render() {
