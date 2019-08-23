@@ -14,7 +14,7 @@ namespace CategoryWords.Controllers
     {
         private string[] categories = new[]
         {
-            "cars", "animals", "names", "movies"
+            "choose category...","cars", "animals", "names", "movies"
         };
 
         [HttpGet("[action]")]

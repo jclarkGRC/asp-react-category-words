@@ -1,23 +1,20 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { actionCreators } from '../store/Counter';
+import { actionCreators } from '../store/Home';
 
-const Game = props => (
-  <div>
+const Game = props => {
+    console.log(props);
 
-
-    <h1>Counter</h1>
-
-    <p>This is a simple example of a React component.</p>
-
-    <p>Current count: <strong>{props.count}</strong></p>
-
-    <button onClick={props.increment}>Increment</button>
-  </div>
-);
+    return(
+        <div>
+            <h1>Category Words</h1>
+            <p>Current Category is: {props.currentCategory}</p>
+        </div>
+    )
+};
 
 export default connect(
-  state => state.counter,
+  state => state.categories,
   dispatch => bindActionCreators(actionCreators, dispatch)
 )(Game);
