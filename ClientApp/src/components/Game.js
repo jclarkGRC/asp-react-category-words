@@ -8,8 +8,22 @@ const Game = props => {
 
     return(
         <div>
-            <h1>Category Words</h1>
-            <p>Current Category is: {props.currentCategory}</p>
+            <div style={{ float: "left" }}> 
+                <h1>Category Words</h1>
+                <p>Current Category is: {props.currentCategory}</p>
+                <p>Time remaining: </p>
+                <p>Score: </p>
+                <p>Current Word: </p>
+                <p>Guess a word that starts with: </p>
+                <input id="currentWord"></input>
+                <input type="submit" value="submit" />
+            </div>
+            <div style={{ float: "right" }}>
+                <h3>Used words list...</h3>
+                <ul>
+
+                </ul>
+            </div>
         </div>
     )
 };
