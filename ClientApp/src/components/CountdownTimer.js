@@ -20,7 +20,7 @@ class CountdownTimer extends React.Component {
     countDownByOneSecond() {
         let now = new Date().getTime();
         let distance = this.countDownDate - now;
-        let seconds = Math.floor((distance % (1000 * 30)) / 1000);
+        let seconds = Math.floor((distance % (1000 * this.props.secondsLeft)) / 1000);
         this.setState({ secondsLeft: seconds })
     }
 

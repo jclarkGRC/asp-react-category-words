@@ -13,7 +13,7 @@ const Game = props => {
                 <h1>Category Words</h1>
                 <p>Current Category is: {props.currentCategory}</p>
                 <CountdownTimer
-                    secondsLeft={30}
+                    secondsLeft={60}
                 />
                 <p>Score: </p>
                 <p>Current Word: </p>
